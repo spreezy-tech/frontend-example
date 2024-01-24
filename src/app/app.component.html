@@ -1,0 +1,9 @@
+<p>App Subject value : {{ latestSubjectValue }}</p>
+<p>App observableValue value : {{ latestObservableValue }}</p>
+<button routerLink="/login" routerLinkActive="active">ABC</button>
+<app-popup
+  [message]="sendMessage()"
+  (testEvent)="getEventMessage($event)"
+></app-popup>
+<p>Received {{ eventMessage }}</p>
+<router-outlet></router-outlet>
